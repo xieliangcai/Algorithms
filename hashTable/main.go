@@ -10,8 +10,6 @@ import (
 2、通过index找到指定的链表
 3、遍历链表找到和k相等的节点，返回 v
 
-1、创建长度为16的列表
-2、
 */
 
 func main() {
@@ -22,5 +20,4 @@ func main() {
 	if v, ok := hashTable.Search("Age");ok{
 		fmt.Println(v)
 	}
-
 }

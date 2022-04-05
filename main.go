@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"sort"
+)
+
 type ListNode struct {
 	Val int
 	Next *ListNode
@@ -56,11 +61,43 @@ func addNode(a *ListNode, v int){
 }
 
 func main() {
-	l1 := &ListNode{2, nil}
-	l2 := &ListNode{5, nil}
-	addNode(l1, 4)
-	addNode(l2, 6)
-	addNode(l1, 3)
-	addNode(l2, 4)
-	addTwoNumbers(l1, l2)
+	coins := []int{411,412,413,414,415,416,417,418,419,420,421,422}
+	amount := 9864
+	result := coinChange(coins, amount)
+	fmt.Println(result)
+}
+
+func coinChange(coins []int, amount int) int {
+	if amount == 0{
+		return 0
+	}
+	sort.Ints(coins)
+	ans := int(^uint(0)>>1)
+	var change func(coins []int,amount, c_index, count, a int)
+	change = func(coins []int,amount, c_index, count, a int){
+		if (amount==0){
+			a = min(a, count)
+			ans = min(a, ans)
+			return
+		}
+		if (c_index == len(coins)){
+			return
+		}
+		for k :=(amount/coins[c_index]); k>=0 && k+count< a; k--{
+			change(coins, amount-k*coins[c_index], c_index+1, count+k, a)
+		}
+	}
+	change(coins, amount, 0,0, ans)
+	if ans == int(^uint(0)>>1){
+		return -1
+	}
+	return ans
+
+}
+
+func min( a, b int)int{
+	if a>=b{
+		return b
+	}
+	return a
 }

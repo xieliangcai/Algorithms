@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b8fbaeb-d0b8-4180-a193-84e400673620" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doublePtr/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCount/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCount/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCount/metrics/metrics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCount/userController/user_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCountv2/aggregator/aggregator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCountv2/consoleReporter/reporter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCountv2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCountv2/metrics/metrics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCountv2/metrics/redisMetricsStorage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverCountv2/metrics/storage/storage.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashTable/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/hashTable/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashTable/hashMap/hashMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/hashTable/hashMap/hashMap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashTable/linkNodes/linkeNodes.go" beforeDir="false" afterPath="$PROJECT_DIR$/hashTable/linkNodes/linkeNodes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashTable/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/hashTable/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/sort/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/bubbleSort/bubbleSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/bubbleSort/bubbleSort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/sort/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/insertSort/insertSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/insertSort/insertSort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/mergeSort/mergeSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/mergeSort/mergeSort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/sumSort/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/sumSort/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/BinarySearch/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/search/BinarySearch/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +109,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/serverCountv2/metrics/storage" />
+      <recent name="$PROJECT_DIR$/serverCountv2/metrics" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Build.go build Algorithms">
     <configuration name="go build Algorithms" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
@@ -121,6 +122,33 @@
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="Algorithms" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Algorithms/heap" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/heap/main.go" />
+      <package value="Algorithms/heap" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Algorithms/search/BinarySearch" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/search/BinarySearch/main.go" />
+      <package value="Algorithms/search/BinarySearch" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Algorithms/search/dfs" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/search/dfs/main.go" />
+      <package value="Algorithms/search/dfs" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -136,6 +164,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build Algorithms" />
+        <item itemvalue="Go Build.go build Algorithms/search/BinarySearch" />
+        <item itemvalue="Go Build.go build Algorithms/heap" />
+        <item itemvalue="Go Build.go build Algorithms/search/dfs" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -190,19 +221,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>64</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>48</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>44</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/search/dfs/main.go</url>
+          <line>36</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -52,12 +52,15 @@ func main() {
 	list := []int{33, 3, 6, 5, 11, 1, 4}
 	//result := InsertSort(list)
 	//fmt.Println(result)
-	a(list)
-	dmap := map[string]int{"a":1}
-	b(dmap)
-	fmt.Println(dmap)
+	//a(list)
+	//dmap := map[string]int{"a":1}
+	//b(dmap)
+	//fmt.Println(dmap)
+	fmt.Println( sortArray(list))
 
 }
+
+
 
 func a(data []int)  {
 	data[0] = 3

@@ -87,7 +87,29 @@ func check(result, expectList []int) bool {
 func main() {
 	list := []int{33, 3, 6, 5, 11, 1, 4}
 	expectList := []int{1, 3, 4, 5, 6, 11, 33}
-	result := sort(list)
+
+
+	result := sortArray(list)
 	fmt.Println(check(result, expectList))
 
+}
+
+func sortArray(nums []int) []int {
+	// 选择排序
+	// 找到最小值，放到最前面
+	for i, v := range nums {
+		min := v
+		fmt.Printf("%v \n",min)
+		var minIndex int
+		for j:= i+1; j< len(nums); j++{
+			fmt.Printf("j %v %v \n", j, min)
+			if nums[j] < min{
+				min = nums[j]
+				minIndex = j
+			}
+		}
+		fmt.Printf("min %v %v \n", min, nums[minIndex])
+		nums[i], nums[minIndex] = nums[minIndex], nums[i]
+	}
+	return nums
 }
